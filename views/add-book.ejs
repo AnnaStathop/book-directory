@@ -1,0 +1,36 @@
+<%- include('header')-%>
+
+<div class="text-center center-div" id="login">
+  <div class="container">
+    <div class="title">
+      <h2>Add New Book</h2>
+    </div>
+    
+    <form method="post">
+      <div class="input_field">
+        <input
+          type="text"
+          required
+          class="form-param"
+          placeholder="Book Title"
+          name="title"
+        />
+      </div>
+      <div class="input_field">
+        <input
+          type="text"
+          required
+          class="form-param"
+          placeholder="Book Author"
+          name="author"
+        />
+      </div>
+      
+      <button type="submit" method="POST" class="btn_add">Save</button>
+      <a class="btn_edit" href="/books/all-books">Cancel</a>
+    </div>
+   
+    </form>
+  
+</div>
+<%- include('footer')-%>

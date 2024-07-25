@@ -1,0 +1,65 @@
+<%- include('main-header')-%>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+/>
+<p>
+  <a href="/users/login" class="button_logout"><b>Log out</b></a>
+</p>
+<div class="container">
+  <form method="post" class="search_form">
+    <div class="input_field">
+      <input
+        type="text"
+        class="form-param"
+        placeholder="Search for a book"
+        name="title"
+      />
+    </div>
+
+    <button type="submit" method="POST" class="btn">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+
+  <p>
+    <a href="/books/all-books" class="button_all"><b>All Books</b></a>
+  </p>
+  <p>
+    <a href="/books/add-book" class="button"><b>Add new book</b></a>
+  </p>
+
+  <table class="list">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td><%= Title %></td>
+      <td><%= author %></td>
+      <td>
+        <form
+          action="/books/update-book/<%= Title %>"
+          method="post"
+          class="list-form"
+        >
+          <input type="hidden" name="title" value="<%= Title %>" />
+          <input type="hidden" name="author" value="<%= author %>" />
+          <a class="btn_edit" href="/books/update-book/<%= Title %>">
+            <i class="fa fa-edit"></i
+          ></a>
+        </form>
+        <form action="/books/delete-book" method="post" class="list-form">
+          <input type="hidden" name="title" value="<%= Title %>" />
+          <input type="hidden" name="author" value="<%= author %>" />
+          <button class="delete_btn">
+            <i class="fa fa-trash"></i>
+          </button>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<%- include('footer')-%>

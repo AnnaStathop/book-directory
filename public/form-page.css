@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: linear-gradient(90deg, rgb(218, 218, 218), white);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 450px;
+  border-radius: 10px;
+}
+
+.container h2 {
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+.container form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .input_field {
+  position: relative;
+  border-bottom: 2px solid black;
+  margin: 30px 0;
+}
+
+.input_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+}
+
+span {
+  margin-left: 45px;
+}
+
+.btn_edit,
+.btn_add {
+  height: 40px;
+  width: 100px;
+  background: none;
+  border-radius: 10px;
+  margin: 10px 0 20px 70px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid black;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.btn_edit:first-child {
+  margin-right: 10px;
+}
+
+.btn_edit:last-child {
+  margin-left: 20px;
+  text-decoration: none;
+  height: 400px;
+  width: 100px;
+  background-color: white;
+  font-size: 13px;
+  padding: 12px 25px 12px 25px;
+  color: black;
+}
+
+.btn_edit:last-child:hover {
+  color: black;
+}
+
+.btn_login_signup {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: none;
+  border-radius: 20px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.btn_cancel,
+.btn_save {
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 2.5%;
+}
+
+.btn_save:hover,
+.btn_cancel:hover {
+  background-color: rgba(0, 0, 0, 0.678);
+  color: white;
+  cursor: pointer;
+}
+
+.popup_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+
+.popup_container h2,
+.popup_container-book h2 {
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+.popup_container form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.popup_text {
+  text-align: center;
+}
+
+.popup_btn {
+  width: 20%;
+  height: 40px;
+  border: 1px solid;
+  background: none;
+  margin: 20px 160px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.popup_container-book {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid;
+}

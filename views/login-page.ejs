@@ -1,0 +1,35 @@
+<%- include('header')-%>
+
+<div class="text-center center-div" id="login">
+  <div class="container">
+    <div class="title">
+      <h2>Login</h2>
+    </div>
+    
+    <form method="post" action="#">
+      <div class="input_field">
+        <input
+          type="email"
+          required
+          class="form-param"
+          placeholder="email"
+          name="email"
+        />
+      </div>
+      <div class="input_field">
+        <input
+          type="password"
+          required
+          class="form-param"
+          placeholder="password"
+          name="password"
+        />
+      </div>
+      <p>Not a user? <a href="/users/signup">Sign up</a></p>
+      <button type="submit" method="POST" class="btn_login_signup" >Login</button>
+    </div> 
+    </form>
+   
+  
+</div>
+<%- include('footer')-%>
